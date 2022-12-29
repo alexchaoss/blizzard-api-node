@@ -1,0 +1,22 @@
+
+/.idea/*
+/bin
+/build
+/coverage
+/lml-toda-live*.tgz
+/logs
+/node_modules
+
+# environment
+.DS_Store
+.env
+.yalc
+yalc.lock
+.history
+yarn-error.log*
+
+# version outputs
+CHANGES-*.md
+results
+/dist/
+/test/api/jmeter.log
