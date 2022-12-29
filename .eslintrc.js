@@ -6,7 +6,6 @@ module.exports = {
     '@typescript-eslint',
   ],
   extends: [
-    '@lml',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended'
   ],

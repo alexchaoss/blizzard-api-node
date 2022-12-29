@@ -1,9 +1,7 @@
+import 'dotenv/config';
 import Express from 'express';
-import { initDB, closeDB } from './src/database'
-import { initEndpoints } from './src/endpoints'
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config();
-}
+import { initDB, closeDB } from './src/database';
+import { initEndpoints } from './src/endpoints';
 
 const server = Express();
 const port = process.env.PORT || 8000;
