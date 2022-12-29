@@ -6,7 +6,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const server = Express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8000;
 
 initDB();
 
