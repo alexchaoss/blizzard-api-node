@@ -1,9 +1,7 @@
 FROM node:16
 WORKDIR /app 
-COPY package.json /app 
-COPY yarn.lock /app
+COPY . /app
 RUN yarn
 RUN yarn build 
-COPY . /app 
 CMD node bin/blizzportal-api.js
 EXPOSE 8000
