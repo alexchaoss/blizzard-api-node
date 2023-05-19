@@ -8,7 +8,7 @@ const genericEndpoint = (path: string, errorMessage: string, query: Function, se
       res.send(queryRes.rows);
     } else {
       res.status(500);
-      res.render('error', { message: errorMessage, error: queryRes });
+      res.json({ message: errorMessage, error: queryRes });
     }
   });
 }
